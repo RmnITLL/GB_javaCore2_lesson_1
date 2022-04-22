@@ -1,31 +1,31 @@
 package HW1;
 
-public class Robot {
+public class Robot implements Running, Gapping {
 
     private String name;
-    private  String run;
-    private  String gap;
 
-    public Robot(String name, String run, String gap) {
+    public Robot(String name) {
         this.name = name;
-        this.run = run;
-        this.gap = gap;
     }
 
-    public String getRun() {
-        return run;
+    public String getName() {
+        return name;
     }
 
-    public String getGap() {
-        return gap;
+    @Override
+    public void run() {
+        System.out.printf("%s пробежал \n", name);
+    }
+
+    @Override
+    public void gap() {
+        System.out.printf("%s перепрыгнул \n", name);
     }
 
     @Override
     public String toString() {
         return "Robot{" +
                 "name='" + name + '\'' +
-                ", run='" + run + '\'' +
-                ", gap='" + gap + '\'' +
                 '}';
     }
 }

@@ -1,35 +1,31 @@
 package HW1;
 
-public class Human {
+public class Human implements Running, Gapping{
 
     private  String name;
-    private  String run;
-    private  String gap;
 
-    public Human(String name, String run, String gap) {
+    public Human(String name) {
         this.name = name;
-        this.run = run;
-        this.gap = gap;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getRun() {
-        return run;
+    @Override
+    public void run() {
+        System.out.printf("%s пробежал \n", name);
     }
 
-    public String getGap() {
-        return gap;
+    @Override
+    public void gap() {
+        System.out.printf("%s перепрыгнул \n", name);
     }
 
     @Override
     public String toString() {
         return "Human{" +
                 "name='" + name + '\'' +
-                ", run='" + run + '\'' +
-                ", gap='" + gap + '\'' +
                 '}';
     }
 }

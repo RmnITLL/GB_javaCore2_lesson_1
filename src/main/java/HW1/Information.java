@@ -4,17 +4,36 @@ public class Information {
 
     public static void main(String[] args) {
 
-        Object[] object = new Object[] {
-                new Cat("Vaska", "10", "2"),
-                new Human("Anton", "200", "1,7"),
-                new Robot("A2R2", "0,1", "0,01")
-        };
+       Running[] runnings = {
+               new Human("Anton"),
+               new Cat("Vaska"),
+               new Robot("R2A2")
+       };
 
-        Object[] objectsAction = new Object[] {
-                new RunningRoad(300),
-                new TheWall(5)
-        };
+       Gapping[] gappings = {
+               new Human("Anton"),
+               new Cat("Vaska"),
+               new Robot("R2A2")
+       };
 
+       RunningRoad[] runningRoad = {
+               new RunningRoad(100),
+               new RunningRoad(200)
+       };
+
+       TheWall[] theWalls = {
+               new TheWall(3),
+               new TheWall(5),
+               new TheWall(10)
+       };
+
+       for (Running walk: runnings) {
+               walk.run();
+           }
+
+       for (Gapping crawl: gappings) {
+           crawl.gap();
+       }
 
     }
 }

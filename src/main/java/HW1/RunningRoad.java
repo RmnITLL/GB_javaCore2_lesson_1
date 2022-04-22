@@ -12,11 +12,11 @@ public class RunningRoad {
         return distance;
     }
 
-    public void infoRunningRoad(String getName, int distance) {
+    public void infoRunningRoad() {
         if (distance > 0) {
-            System.out.printf("%s Смог пробежать %d", getName, distance);
+            System.out.printf("%s Смог пробежать %d", distance);
         } else {
-            System.out.printf("%s к сожелению не смог пробежать", getName);
+            System.out.printf(" к сожелению не смог пробежать");
         }
     }
 
