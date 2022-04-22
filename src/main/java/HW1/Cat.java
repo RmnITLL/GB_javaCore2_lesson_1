@@ -1,12 +1,12 @@
 package HW1;
 
-public class Human {
+public class Cat {
 
-    private  String name;
+    private String name;
     private  String run;
     private  String gap;
 
-    public Human(String name, String run, String gap) {
+    public Cat(String name, String run, String gap) {
         this.name = name;
         this.run = run;
         this.gap = gap;
@@ -26,7 +26,7 @@ public class Human {
 
     @Override
     public String toString() {
-        return "Human{" +
+        return "Cat{" +
                 "name='" + name + '\'' +
                 ", run='" + run + '\'' +
                 ", gap='" + gap + '\'' +
